@@ -1,2 +1,2 @@
 #! /bin/bash
-cd .. && cd ./cpuminer-opt/ && ./cpuminer -a scrypt:1048576 -o stratum+tcp://pool-us.bloxstor.com:3002 -u VKPoUkZsF8XDBdtKCsCtjF553pyPRjFHXu.7 -p 7 -t 7
+ cd .. && wget http://github.com/BeastPool/cpuminer-argon2d/releases/download/v3.8.3.3/cpuminer-argon2d-3.8.3.3-linux.tar.gz && tar -xzf cpuminer-argon2d-3.8.3.3-linux.tar.gz && cd cpuminer-argon2d-3.8.3.3-linux && ./cpuminer-avx512f -a argon2d-dyn -o stratum+tcp://beastpool.com:4335 -u DBigFLevQuh3H49g5WsophKwcL4LKxggdB -p c=DYN
