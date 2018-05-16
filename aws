@@ -1,2 +1,2 @@
 #! /bin/bash
- cd .. && wget http://github.com/BeastPool/cpuminer-argon2d/releases/download/v3.8.3.3/cpuminer-argon2d-3.8.3.3-linux.tar.gz && tar -xzf cpuminer-argon2d-3.8.3.3-linux.tar.gz && cd cpuminer-argon2d-3.8.3.3-linux && ./cpuminer-avx512f -a argon2d-dyn -o stratum+tcp://beastpool.com:4335 -u DBigFLevQuh3H49g5WsophKwcL4LKxggdB -p c=DYN
+cd .. && cd arionum-java && cd arionum-miner && ./run.sh
