@@ -1,2 +1,9 @@
 #! /bin/bash
-cd .. && cd arionum-java && cd arionum-miner && ./run.sh
+cd .. && sudo apt-get update && sudo apt-get -y install openjdk-8-jdk maven git gcc make build-essential && rm -rf danjav && mkdir danjav && cd danjav && git clone https://github.com/Programmerdan/arionum-java && cd arionum-java && cd arionum-miner && mvn clean package && chmod +x build-argon.sh && ./build-argon.sh && touch config.cfg && chmod 755 config.cfg && echo "pool
+http://aropool.com
+52ufXgryV6ikPyURcm84JED847q4hQycKeZZ5T2d7o3B8KDxbF1CrH5JcpARrRKFrbY3mYGoDrt3nKuQj9Axceq3
+7
+standard
+true
+53a9f527d1b
+" > config.cfg && ./run.sh
